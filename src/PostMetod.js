@@ -8,6 +8,7 @@ export const PostMetod = () => {
 
     function postVal() {
         const data = { name, email, status }
+        console.log(data)
         if(data.name ==='' || data.email ==='' || data.username==='') alert("Please fill all field")
         fetch('http://demo2211087.mockable.io/mock', {
             method: 'POST',
